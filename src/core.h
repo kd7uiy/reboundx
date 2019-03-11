@@ -86,6 +86,7 @@ void rebx_tides_precession(struct reb_simulation* const sim, struct rebx_effect*
 void rebx_central_force(struct reb_simulation* const sim, struct rebx_effect* const effect, struct reb_particle* const particles, const int N);
 void rebx_tides_synchronous_ecc_damping(struct reb_simulation* const sim, struct rebx_effect* const effect, struct reb_particle* const particles, const int N);
 void rebx_gravitational_harmonics(struct reb_simulation* const sim, struct rebx_effect* const effect, struct reb_particle* const particles, const int N);
+void rebx_whipple(struct reb_simulation* const sim, struct rebx_effect* const effect, struct reb_particle* const particles, const int N);
 
 /****************************************
  Operator prototypes

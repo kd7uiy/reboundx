@@ -310,6 +310,9 @@ struct rebx_effect* rebx_add(struct rebx_extras* rebx, const char* name){
     else if (effect->hash == reb_hash("gravitational_harmonics")){
         effect->force = rebx_gravitational_harmonics;
     }
+    else if (effect->hash == reb_hash("whipple")){
+        effect->force = rebx_whipple;
+    }
     else{
         char str[100]; 
         sprintf(str, "Effect '%s' passed to rebx_add not found.\n", name);
